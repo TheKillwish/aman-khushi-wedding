@@ -1,0 +1,54 @@
+
+<section class="countdown-section" id="countdown">
+
+  <div class="countdown-content">
+
+    <p class="eyebrow">The countdown begins</p>
+
+    <h2 class="section-title">
+      Until we say <em>I do.</em>
+    </h2>
+
+    @if (!weddingStarted()) {
+
+      <div class="countdown-grid">
+
+        <div class="countdown-item">
+          <strong>{{ days() }}</strong>
+          <span>DAYS</span>
+        </div>
+
+        <div class="countdown-item">
+          <strong>{{ hours() | number:'2.0-0' }}</strong>
+          <span>HOURS</span>
+        </div>
+
+        <div class="countdown-item">
+          <strong>{{ minutes() | number:'2.0-0' }}</strong>
+          <span>MINUTES</span>
+        </div>
+
+        <div class="countdown-item">
+          <strong>{{ seconds() | number:'2.0-0' }}</strong>
+          <span>SECONDS</span>
+        </div>
+
+      </div>
+
+    } @else {
+
+      <div class="wedding-started">
+        <h3>The celebrations have begun!</h3>
+        <p>Aman & Khushi · 24 November 2026</p>
+        <span>♥</span>
+      </div>
+
+    }
+
+    <p class="countdown-note">
+      Every second brings us closer to forever.
+    </p>
+
+  </div>
+
+</section>

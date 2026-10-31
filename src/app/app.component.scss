@@ -1,0 +1,7 @@
+:host { display:block; overflow:hidden; }
+.site-header { height:76px; padding:0 clamp(20px,6vw,88px); display:flex; align-items:center; justify-content:space-between; background:rgba(250,247,240,.94); border-bottom:1px solid rgba(112,55,58,.12); position:sticky; top:0; z-index:20; backdrop-filter:blur(14px); }
+.brand { font:600 25px 'Cormorant Garamond',serif; letter-spacing:2px; color:var(--wine); text-decoration:none; }.brand span { color:var(--rose); font-size:13px; vertical-align:middle; margin:0 4px; }
+nav { display:flex; gap:clamp(16px,3vw,42px); } nav a,.header-cta { color:var(--ink); text-decoration:none; font-size:11px; letter-spacing:1.4px; text-transform:uppercase; } nav a:hover,.header-cta:hover { color:var(--rose); }
+.header-cta { border:1px solid var(--wine); padding:11px 17px; border-radius:2px; }.header-cta span { margin-left:10px; }
+.site-footer { display:flex; justify-content:space-between; align-items:center; padding:24px clamp(20px,6vw,88px); background:#3e1726; color:#f7e9d8; font-size:9px; letter-spacing:2px; }
+@media(max-width:640px){.site-header{height:64px;padding:0 18px}.site-header nav{display:none}.header-cta{padding:9px 12px;font-size:9px}.site-footer{font-size:8px;letter-spacing:1px;padding:20px 18px}}

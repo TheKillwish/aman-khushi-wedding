@@ -1,0 +1,114 @@
+
+<section class="events-section" id="events">
+
+  <!-- Section Heading -->
+  <div class="events-heading">
+
+    <p class="eyebrow">Save the dates</p>
+
+    <h2 class="section-title">
+      Wedding <em>celebrations.</em>
+    </h2>
+
+    <p class="section-copy">
+      Three days of traditions, togetherness and beautiful memories.
+      Your presence will make every moment more special.
+    </p>
+
+  </div>
+
+  <!-- Event Cards -->
+  <div class="event-list">
+
+    @for (event of events; track event.number) {
+
+      <article class="event-card">
+
+        <!-- Event Information -->
+        <div class="event-main">
+
+          <div class="event-date">
+            <span>{{ event.day }}</span>
+            <strong>{{ event.date }}</strong>
+            <small>{{ event.month }}</small>
+          </div>
+
+          <div class="event-info">
+
+            <span class="event-number">
+              {{ event.number }} / CELEBRATION
+            </span>
+
+            <h3>{{ event.title }}</h3>
+
+            <p class="event-hindi">
+              {{ event.hindi }}
+            </p>
+
+            <p class="event-description">
+              {{ event.description }}
+            </p>
+
+            <span class="event-time">
+              <span class="clock-icon">◷</span>
+              {{ event.time }}
+            </span>
+
+          </div>
+
+          <div class="event-mark">✧</div>
+
+        </div>
+
+        <!-- Event Location -->
+        <div class="event-location">
+
+          <div class="location-heading">
+
+            <div class="location-details">
+
+              <span class="location-label">
+                CELEBRATION VENUE
+              </span>
+
+              <h4>{{ event.location }}</h4>
+
+              <p>{{ event.address }}</p>
+
+            </div>
+
+            <a
+              class="directions-link"
+              [href]="event.directionsUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              [attr.aria-label]="'Get directions to ' + event.location"
+            >
+              Get Directions
+              <span>↗</span>
+            </a>
+
+          </div>
+
+          <!-- Google Maps -->
+          <div class="event-map">
+
+            <iframe
+              [src]="event.mapUrl"
+              [title]="'Google Maps - ' + event.location"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    }
+
+  </div>
+
+</section>
