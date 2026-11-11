@@ -18,7 +18,7 @@ export class CountdownComponent implements OnInit, OnDestroy {
 
   // Wedding date: 24 November 2026, midnight IST
   private readonly weddingDate =
-    new Date('2026-11-24T00:00:00+05:30').getTime();
+    new Date('2026-11-24T19:00:00+05:30').getTime();
 
   private timerId?: ReturnType<typeof setInterval>;
 

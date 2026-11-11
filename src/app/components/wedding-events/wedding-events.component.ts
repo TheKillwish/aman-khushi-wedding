@@ -22,10 +22,9 @@ interface WeddingEvent {
 export class WeddingEventsComponent {
 
   private readonly sanitizer = inject(DomSanitizer);
-
   // Home Google Maps embed URL
   private readonly homeMapUrl =
-    'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d225.40229981529296!2d86.5046468958347!3d25.323119827307686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1793441911867!5m2!1sen!2sin';
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225.40231404942972!2d86.5046853107516!3d25.323112180882386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f1eb000bcc3f31%3A0x3a94c39ecf228bab!2sAman'%20Home!5e0!3m2!1sen!2sin!4v1794393979253!5m2!1sen!2sin";
 
   // Shree Banquet Hall map
   private readonly banquetMapUrl =
@@ -49,7 +48,7 @@ export class WeddingEventsComponent {
         'A joyful beginning filled with colours, traditions and family celebrations.',
       time: 'As per family invitation',
       location: 'At Our Residence',
-      address: 'Mungerora, Jamalpur, Munger, Bihar – 811214',
+      address: 'Mungroura, Jamalpur, Munger, Bihar – 811214',
       mapUrl: this.trustMapUrl(this.homeMapUrl),
       directionsUrl:
         'https://www.google.com/maps/dir/?api=1&destination=25.323119827307686,86.5046468958347'
@@ -66,7 +65,7 @@ export class WeddingEventsComponent {
         'An auspicious day of rituals, blessings and sacred traditions.',
       time: 'As per family invitation',
       location: 'At Our Residence',
-      address: 'Mungerora, Jamalpur, Munger, Bihar – 811214',
+      address: 'Mungroura, Jamalpur, Munger, Bihar – 811214',
       mapUrl: this.trustMapUrl(this.homeMapUrl),
       directionsUrl:
         'https://www.google.com/maps/dir/?api=1&destination=25.323119827307686,86.5046468958347'
@@ -81,7 +80,7 @@ export class WeddingEventsComponent {
       hindi: 'शुभ विवाह',
       description:
         'With the arrival of the baraat, join us as we celebrate the beginning of forever.',
-      time: 'Baraat departure: 7:00 PM · Preeti Bhoj: 8:00 PM onwards',
+      time: 'Baraat departure: 7:00 PM · Preeti Bhoj: 7:00 PM onwards',
       location: 'Shree Banquet Hall',
       address:
         'Mannat Complex, Near Ambey Chowk, Dilawer Pur, Munger, Bihar – 811201',
